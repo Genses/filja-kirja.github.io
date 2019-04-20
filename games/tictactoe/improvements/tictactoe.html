@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Крестики-Нолики</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../../../favicon.png" type="image/x-icon">
+    <link rel="icon" href="../../../favicon.png" type="image/x-icon">
+</head>
+
+<body>
+
+	<table>
+		<tr>
+			<td class="cell" id="0"></td>
+			<td class="cell" id="1"></td>
+			<td class="cell" id="2"></td>
+		</tr>
+		<tr>
+			<td class="cell" id="3"></td>
+			<td class="cell" id="4"></td>
+			<td class="cell" id="5"></td>
+		</tr>
+		<tr>
+			<td class="cell" id="6"></td>
+			<td class="cell" id="7"></td>
+			<td class="cell" id="8"></td>
+		</tr>
+	</table>
+	<div class="endgame">
+		<div class="text"></div>
+	</div>
+    <div class = "selectSym">
+    <p>Select symbol:</p>
+      <button onClick="selectSym('X')">X</button>
+      <button onClick="selectSym('O')">O</button>
+    </div>
+	<button onClick="startGame()" style="height:80px; 
+  width:200px; 
+  position: absolute; 
+  left: 50%;
+  top: 55%;
+  margin-left: -110px;
+  padding-top: 25px;
+  padding-bottom: 50px;
+  text-align: center;
+  border-radius: 100px;
+  background: #4cff00;
+            ">Replay</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
